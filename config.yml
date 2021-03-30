@@ -1,0 +1,16 @@
+title: Website Development
+description: Build a professional website
+template:
+  repo: website-development-template
+  name: website-development
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
